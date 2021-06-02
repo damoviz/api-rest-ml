@@ -33,8 +33,6 @@ exports.trace = async (req, res) => {
       const responseIpApi = await fetch(`${urlIpApi}${ip}?access_key=${keyIpApi}`)
       jsonIpApi = await responseIpApi.json()
 
-      myCache.set("ipApi", jsonIpApi)
-
       myCache.set(ip, jsonIpApi)
     }
 

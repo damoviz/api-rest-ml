@@ -10,7 +10,7 @@ conexionDB()
 
 // settings
 app.set("name", "rest-api-ml")
-app.set("port", process.env.APP_PORT || 3005)
+app.set("port", process.env.PORT || 3005)
 
 // BodyParser middleware
 app.use(express.json())
